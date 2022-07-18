@@ -1,16 +1,13 @@
-
-
-import React from "react"
-
-function Header( {darkMode, onDarkModeClick} ) {
+const Header = ({onDarkModeClick, isDarkMode}) => {
     return(
-    <header>
+        <header>
         <h2>Shopster</h2>
         <button onClick={onDarkModeClick}>
-            {darkMode ? "Dark" : "Light"} Mode
+          {isDarkMode ? "Dark" : "Light"} Mode
         </button>
-    </header>
+       
+      </header>
+       
     )
 }
-
 export default Header;
